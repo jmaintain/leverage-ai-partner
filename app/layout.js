@@ -1,0 +1,128 @@
+import { DM_Serif_Display, IBM_Plex_Sans, IBM_Plex_Mono } from "next/font/google";
+import "./globals.css";
+import Nav from "./components/Nav";
+import Footer from "./components/Footer";
+
+const serif = DM_Serif_Display({
+  weight: "400",
+  style: "italic",
+  subsets: ["latin"],
+  variable: "--font-serif",
+  display: "swap",
+});
+
+const sans = IBM_Plex_Sans({
+  weight: ["400", "500"],
+  subsets: ["latin"],
+  variable: "--font-plex-sans",
+  display: "swap",
+});
+
+const mono = IBM_Plex_Mono({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-plex-mono",
+  display: "swap",
+});
+
+export const metadata = {
+  title: "Leverage AI Partner — AI Consulting, Training & Development for Small Business",
+  description:
+    "Two AI engineers helping small businesses audit, automate, and grow with AI. Audits, workshops, custom agent development, and ongoing support. Phoenix, AZ & Houston, TX.",
+  metadataBase: new URL("https://www.leverageaipartner.com"),
+  keywords: [
+    "AI consulting",
+    "AI training",
+    "AI automation",
+    "small business AI",
+    "AI business audit",
+    "custom AI development",
+    "AI workshops",
+    "business automation",
+    "Phoenix AI consultant",
+    "Houston AI consultant",
+  ],
+  icons: {
+    icon: [
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon.ico" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png" }],
+    other: [
+      { rel: "android-chrome-192x192", url: "/android-chrome-192x192.png" },
+      { rel: "android-chrome-512x512", url: "/android-chrome-512x512.png" },
+    ],
+  },
+  openGraph: {
+    title: "Leverage AI Partner — AI Consulting, Training & Development",
+    description:
+      "Two AI engineers helping small businesses audit, automate, and grow with AI. Audits, workshops, custom development, and ongoing support.",
+    type: "website",
+    url: "https://www.leverageaipartner.com",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Leverage AI Partner",
+    description:
+      "AI consulting, training, and development for small business. Phoenix, AZ & Houston, TX.",
+  },
+  alternates: {
+    canonical: "https://www.leverageaipartner.com",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true },
+  },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: "Leverage AI Partner",
+  description:
+    "AI consulting, training, and custom development for small and mid-sized businesses.",
+  url: "https://www.leverageaipartner.com",
+  email: "hello@leverageaipartner.com",
+  areaServed: ["Phoenix, AZ", "Houston, TX", "United States"],
+  serviceType: [
+    "AI Business Audit",
+    "AI Training & Workshops",
+    "Custom AI Development",
+    "AI Automation",
+    "Ongoing AI Support",
+  ],
+  employee: [
+    {
+      "@type": "Person",
+      name: "Jermaine Williams",
+      jobTitle: "AI Engineer & Consultant",
+      address: { "@type": "PostalAddress", addressLocality: "Phoenix", addressRegion: "AZ" },
+    },
+    {
+      "@type": "Person",
+      name: "Brandon Davis",
+      jobTitle: "AI Engineer & Consultant",
+      address: { "@type": "PostalAddress", addressLocality: "Houston", addressRegion: "TX" },
+    },
+  ],
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en" className={`${serif.variable} ${sans.variable} ${mono.variable}`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
+      <body>
+        <Nav />
+        {children}
+        <Footer />
+      </body>
+    </html>
+  );
+}
