@@ -23,7 +23,7 @@ export default function Nav() {
           <Link href="/#team" className="nav-link">About</Link>
           <Link href="/resources" className="nav-link">Resources</Link>
           <Link href="/book" className="btn-primary" style={{ padding: "10px 20px", fontSize: 14 }}>
-            Book an Audit
+            Book an Assessment
           </Link>
         </div>
       </div>
