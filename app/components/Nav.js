@@ -24,7 +24,7 @@ export default function Nav() {
           <Link href="/resources" className="nav-link">Resources</Link>
           <a href="https://zcal.co/i/e8rGW1ab" className="btn-primary" style={{ padding: "10px 20px", fontSize: 14 }}>
             Book a Call
-          </Link>
+          </a>
         </div>
       </div>
     </nav>
