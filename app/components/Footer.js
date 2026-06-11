@@ -15,15 +15,15 @@ export default function Footer() {
           <div className="footer-nav">
             <div className="footer-nav-col">
               <div className="footer-nav-heading">Services</div>
-              <Link href="/#services">AI Business Audit</Link>
-              <Link href="/#services">AI Training</Link>
-              <Link href="/#services">Custom Development</Link>
+              <Link href="/#services">AI Business Assessment</Link>
+              <Link href="/#services">Missed Call Recovery</Link>
+              <Link href="/#services">Custom AI Development</Link>
               <Link href="/#services">Ongoing Support</Link>
             </div>
             <div className="footer-nav-col">
               <div className="footer-nav-heading">Company</div>
               <Link href="/#team">About Us</Link>
-              <Link href="/book">Book a Call</Link>
+              <a href="https://zcal.co/i/e8rGW1ab">Book a Call</a>
               <a href="mailto:hello@leverageaipartner.com">Contact</a>
             </div>
           </div>

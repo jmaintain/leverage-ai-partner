@@ -21,11 +21,11 @@ export default function ResourcesPage() {
         <div className="resources-cards">
           <Link href="/chat" className="resource-card">
             <div className="resource-card-icon"><LexIcon /></div>
-            <div className="resource-card-title">Chat with Lex</div>
+            <div className="resource-card-title">Get Your AI Quick Win</div>
             <p className="resource-card-body">
-              4 quick questions. A personalized AI action plan. Lex identifies your highest-leverage quick win in about 2 minutes — with a specific first step you can take today.
+              4 quick questions. A personalized action plan and a ready-to-use prompt you can copy and act on today — no email required.
             </p>
-            <span className="resource-card-link">Start the chat →</span>
+            <span className="resource-card-link">Get your quick win →</span>
           </Link>
           <Link href="/prompts" className="resource-card">
             <div className="resource-card-icon"><PromptsIcon /></div>

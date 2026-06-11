@@ -1,9 +1,9 @@
 import LexChat from "../components/LexChat";
 
 export const metadata = {
-  title: "Chat with Lex · Leverage AI Partner",
+  title: "Get Your AI Quick Win · Leverage AI Partner",
   description:
-    "Find your first AI quick win in a 2-minute chat. Lex asks 4 quick questions and puts together a personalized action plan — no pressure, no tech skills required.",
+    "Answer 4 quick questions and get a personalized AI action plan with a ready-to-use prompt — no email required.",
 };
 
 export default function ChatPage() {
@@ -11,10 +11,10 @@ export default function ChatPage() {
     <main className="lex-wrap">
       <div className="container">
         <div className="lex-hero">
-          <div className="eyebrow eyebrow-green">Find your quick win</div>
-          <h1 className="lex-headline">Chat with Lex.</h1>
+          <div className="eyebrow eyebrow-green">Free · No email required</div>
+          <h1 className="lex-headline">Get your AI quick win.</h1>
           <p className="lex-subhead">
-            Answer 4 quick questions. Lex identifies your highest-leverage AI opportunity and puts together a personalized action plan — no pressure, no tech skills required.
+            Answer 4 quick questions. We&apos;ll identify your highest-leverage AI opportunity and give you a ready-to-use prompt so you can act on it today.
           </p>
         </div>
         <LexChat />

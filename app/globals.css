@@ -1044,6 +1044,18 @@ img { max-width: 100%; display: block; }
   transition: opacity var(--ease);
 }
 .service-link:hover { opacity: 0.75; }
+.services-cta-note {
+  margin-top: var(--space-8);
+  font-size: 15px;
+  color: var(--color-text-secondary);
+  text-align: center;
+}
+.services-cta-link {
+  color: var(--color-accent-green);
+  font-weight: 500;
+  transition: opacity var(--ease);
+}
+.services-cta-link:hover { opacity: 0.75; }
 
 /* ── Support / training callout ── */
 .support-grid {
@@ -1352,52 +1364,47 @@ img { max-width: 100%; display: block; }
   line-height: 1.65;
   color: var(--color-text-primary);
 }
-/* Email form */
-.lex-email-form {
-  padding-top: 8px;
-  border-top: 1px solid var(--color-border);
-}
-.lex-email-label {
-  font-size: 15px;
-  color: var(--color-text-secondary);
-  margin-bottom: 12px;
-}
-.lex-email-row {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-.lex-email-input {
-  flex: 1;
-  min-width: 200px;
+/* Prompt block */
+.lex-prompt-block {
+  padding: 20px;
   background: var(--color-surface-raised);
   border: 1px solid var(--color-border-strong);
-  border-radius: var(--radius-button);
-  padding: 12px 16px;
-  font-size: 15px;
-  font-family: inherit;
-  color: var(--color-text-primary);
-  outline: none;
-  transition: border-color var(--ease);
-}
-.lex-email-input::placeholder { color: var(--color-text-secondary); }
-.lex-email-input:focus { border-color: var(--color-accent); }
-.lex-confirm {
+  border-radius: var(--radius-card);
   display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 14px 18px;
-  background: rgba(27, 168, 126, 0.08);
-  border: 1px solid rgba(27, 168, 126, 0.25);
-  border-radius: var(--radius-button);
-  font-size: 15px;
-  color: var(--color-text-primary);
+  flex-direction: column;
+  gap: 12px;
 }
-.lex-confirm-check {
+.lex-prompt-label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   color: var(--color-accent-green);
-  font-weight: 500;
-  flex-shrink: 0;
 }
+.lex-prompt-text {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--color-text-primary);
+  white-space: pre-wrap;
+  word-break: break-word;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+.lex-copy-btn {
+  align-self: flex-start;
+  background: transparent;
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-button);
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  cursor: pointer;
+  transition: border-color var(--ease), color var(--ease);
+}
+.lex-copy-btn:hover { border-color: var(--color-accent-green); color: var(--color-accent-green); }
 .lex-result-cta {
   padding-top: 8px;
   border-top: 1px solid var(--color-border);

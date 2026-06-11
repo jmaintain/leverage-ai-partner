@@ -42,7 +42,6 @@ export default function HomePage() {
               <p className="service-body-v2">
                 The fastest way to find your biggest automation wins. A structured discovery call, a custom 48-hour report mapping your opportunities by effort and impact, and a walkthrough call so you know exactly where to start.
               </p>
-              <a href={BOOK_URL} className="service-link">Book a call →</a>
             </div>
 
             <div className="service-card-v2">
@@ -54,7 +53,6 @@ export default function HomePage() {
               <p className="service-body-v2">
                 Most service businesses lose jobs before they ever answer the phone. We audit your missed calls, identify the revenue slipping through the cracks, and configure a voice agent that follows up automatically — so no lead goes cold when your crew is in the field.
               </p>
-              <a href="mailto:hello@leverageaipartner.com" className="service-link">See how it works →</a>
             </div>
 
             <div className="service-card-v2">
@@ -66,7 +64,6 @@ export default function HomePage() {
               <p className="service-body-v2">
                 Agents, automations, and purpose-built apps designed around your exact workflows. We build fast — vibe-coded and production-ready — with clear deliverables and no drawn-out timelines. If you can describe the problem, we can ship the solution.
               </p>
-              <a href="mailto:hello@leverageaipartner.com" className="service-link">Start a project →</a>
             </div>
 
             <div className="service-card-v2">
@@ -78,9 +75,11 @@ export default function HomePage() {
               <p className="service-body-v2">
                 A retainer partner who keeps your AI systems tuned, updated, and scaling as your business grows. New integrations, team onboarding, performance reviews, and rapid-response help when something needs adjusting.
               </p>
-              <a href="mailto:hello@leverageaipartner.com" className="service-link">Learn more →</a>
             </div>
           </div>
+          <p className="services-cta-note">
+            Questions about any service? <a href="https://zcal.co/i/e8rGW1ab" className="services-cta-link">Book a call</a> and we&apos;ll walk you through it.
+          </p>
         </div>
       </Reveal>
 
@@ -165,12 +164,12 @@ export default function HomePage() {
           <div className="lex-teaser">
             <div>
               <div className="eyebrow">Not ready to book?</div>
-              <h2 className="lex-teaser-heading">Chat with Lex.</h2>
+              <h2 className="lex-teaser-heading">Get your AI quick win.</h2>
               <p className="lex-teaser-body">
-                Lex finds your first AI quick win in a 2-minute chat — no pressure, no tech skills required.
+                Answer 4 questions. Get a personalized action plan and a ready-to-use prompt — no email required.
               </p>
               <Link href="/chat" className="btn-primary" style={{ marginTop: 24, display: "inline-flex" }}>
-                Chat with Lex →
+                Get your quick win →
               </Link>
             </div>
             <div className="lex-teaser-preview" aria-hidden="true">

@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import Link from "next/link";
 
 const QUESTIONS = [
   {
@@ -49,6 +48,13 @@ const RESULTS = {
       "Use AI to summarize long threads or meeting notes before you respond, so you always go in prepared.",
     ],
     quickwin: "Paste your next long email thread into ChatGPT and ask for a 3-bullet summary. Do it once — you'll wonder how you managed without it.",
+    prompt: `You are a professional business communication assistant. I'm going to paste an email thread below. Please:
+1. Summarize the key points in 3 bullets
+2. Identify any action items I need to respond to
+3. Draft a clear, concise reply I can send or lightly edit
+
+Here is the email thread:
+[PASTE YOUR EMAIL THREAD HERE]`,
   },
   admin: {
     headline: "Your quick win is in admin, reporting, and documentation.",
@@ -58,6 +64,15 @@ const RESULTS = {
       "Automate repetitive document creation with workflow tools connected to AI.",
     ],
     quickwin: "Take your messiest internal document and ask Claude to rewrite it as a clear SOP. It takes 5 minutes and the result will surprise you.",
+    prompt: `You are a business operations expert. I'm going to give you my rough notes on a process. Please turn them into a clear, step-by-step Standard Operating Procedure (SOP) that anyone on my team can follow.
+
+Format it with:
+- A short title and purpose statement
+- Numbered steps
+- Any important notes or warnings in bold
+
+Here are my rough notes:
+[PASTE YOUR NOTES HERE]`,
   },
   it: {
     headline: "Your quick win is in IT documentation and systems support.",
@@ -67,6 +82,13 @@ const RESULTS = {
       "Automate routine IT communications — change notices, system updates, and onboarding instructions.",
     ],
     quickwin: "Pick one internal technical process that's poorly documented. Ask Claude to turn your rough notes into a clear step-by-step guide. You'll have a first draft in under 10 minutes.",
+    prompt: `You are a technical writer who specializes in making IT processes easy for non-technical staff to understand. I'm going to describe a technical process or system. Please write:
+1. A plain-English explanation of what it does and why it matters
+2. A step-by-step guide any team member can follow
+3. A simple troubleshooting section for the 3 most common issues
+
+Here is the process to document:
+[DESCRIBE YOUR PROCESS OR PASTE YOUR NOTES HERE]`,
   },
   delivery: {
     headline: "Your quick win is in client delivery and project workflows.",
@@ -76,26 +98,41 @@ const RESULTS = {
       "Use AI to prep for client calls by summarizing past notes and surfacing the right questions to ask.",
     ],
     quickwin: "Before your next client call, paste your notes into ChatGPT and ask: 'What are the 3 most important things to address in this meeting?' You'll walk in sharper.",
+    prompt: `You are a client success expert. I'm going to share my notes from recent interactions with a client. Please:
+1. Summarize where we stand on the project in 2-3 sentences
+2. List the 3 most important things to address in our next meeting
+3. Draft a short, professional status update I can send to the client
+
+Here are my notes:
+[PASTE YOUR CLIENT NOTES HERE]`,
   },
 };
+
+function CopyButton({ text }) {
+  const [copied, setCopied] = useState(false);
+
+  function handleCopy() {
+    navigator.clipboard.writeText(text).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    });
+  }
+
+  return (
+    <button className="lex-copy-btn" onClick={handleCopy}>
+      {copied ? "✓ Copied!" : "Copy prompt"}
+    </button>
+  );
+}
 
 export default function LexChat() {
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState([]);
-  const [email, setEmail] = useState("");
-  const [submitted, setSubmitted] = useState(false);
 
   function handleAnswer(value) {
     const newAnswers = [...answers, value];
     setAnswers(newAnswers);
     setStep(step + 1);
-  }
-
-  function handleEmailSubmit(e) {
-    e.preventDefault();
-    // TODO: wire up email service (Resend, EmailJS, Formspree, etc.)
-    console.log("Lex email capture:", email, "Answers:", answers);
-    setSubmitted(true);
   }
 
   const isResult = step >= QUESTIONS.length;
@@ -141,31 +178,15 @@ export default function LexChat() {
             <p className="lex-quickwin-text">{result.quickwin}</p>
           </div>
 
-          {!submitted ? (
-            <form className="lex-email-form" onSubmit={handleEmailSubmit}>
-              <p className="lex-email-label">Want this sent to your inbox?</p>
-              <div className="lex-email-row">
-                <input
-                  type="email"
-                  className="lex-email-input"
-                  placeholder="your@email.com"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  required
-                />
-                <button type="submit" className="btn-primary">Send it</button>
-              </div>
-            </form>
-          ) : (
-            <div className="lex-confirm">
-              <span className="lex-confirm-check">✓</span>
-              Got it — we&apos;ll send this to <strong>{email}</strong>. Check your inbox shortly.
-            </div>
-          )}
+          <div className="lex-prompt-block">
+            <div className="lex-prompt-label">Ready-to-use prompt — paste this into ChatGPT or Claude</div>
+            <pre className="lex-prompt-text">{result.prompt}</pre>
+            <CopyButton text={result.prompt} />
+          </div>
 
           <div className="lex-result-cta">
             <p className="lex-result-cta-text">Want a custom plan built around your specific business?</p>
-            <Link href="/book" className="btn-primary">Book an AI Audit — $497</Link>
+            <a href="https://zcal.co/i/e8rGW1ab" className="btn-primary">Book a Call</a>
           </div>
         </div>
       )}
