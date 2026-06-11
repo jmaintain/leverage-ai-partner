@@ -22,8 +22,8 @@ export default function Nav() {
           <Link href="/#services" className="nav-link">Services</Link>
           <Link href="/#team" className="nav-link">About</Link>
           <Link href="/resources" className="nav-link">Resources</Link>
-          <Link href="/book" className="btn-primary" style={{ padding: "10px 20px", fontSize: 14 }}>
-            Book an Assessment
+          <a href="https://zcal.co/i/e8rGW1ab" className="btn-primary" style={{ padding: "10px 20px", fontSize: 14 }}>
+            Book a Call
           </Link>
         </div>
       </div>

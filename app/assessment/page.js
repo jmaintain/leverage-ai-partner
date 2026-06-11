@@ -6,7 +6,7 @@ export const metadata = {
     "The AI Business Assessment: a structured discovery call, a custom report in 48 hours, and a walkthrough call. $497 flat.",
 };
 
-const BOOK_URL = "/book";
+const BOOK_URL = "https://zcal.co/i/e8rGW1ab";
 
 export default function AssessmentPage() {
   return (
@@ -42,7 +42,7 @@ export default function AssessmentPage() {
         </div>
 
         <div style={{ marginTop: 40, display: "flex", gap: 16, flexWrap: "wrap", alignItems: "center" }}>
-          <Link href={BOOK_URL} className="btn-primary">Book your assessment →</Link>
+          <a href={BOOK_URL} className="btn-primary">Book a Call →</a>
           <Link href="/" className="btn-ghost">Back to overview</Link>
         </div>
       </div>

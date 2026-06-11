@@ -96,7 +96,7 @@ export default function BookPage() {
 
       {/* CALENDAR */}
       <Reveal as="section" id="calendar" className="section book-section container" style={{ borderTop: "1px solid var(--color-border)" }}>
-        <div className="eyebrow eyebrow-green">Book your call</div>
+        <div className="eyebrow eyebrow-green">Book a call</div>
         <h2 className="book-section-heading">Pick a time that works for you.</h2>
         <div className="book-calendar-wrap">
           <ZcalEmbed />

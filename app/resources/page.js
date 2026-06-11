@@ -46,7 +46,7 @@ export default function ResourcesPage() {
             The AI Business Assessment gives you a custom roadmap built around how your team specifically operates — not a generic checklist.
           </p>
           <div className="cta-close-row">
-            <Link href="/book" className="btn-primary">Book an Assessment — $497</Link>
+            <a href="https://zcal.co/i/e8rGW1ab" className="btn-primary">Book a Call — $497</a>
             <a href="mailto:hello@leverageaipartner.com" className="btn-ghost">Email us</a>
           </div>
         </div>

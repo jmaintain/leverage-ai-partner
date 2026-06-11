@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Reveal from "./components/Reveal";
 
-const BOOK_URL = "/book";
+const BOOK_URL = "https://zcal.co/i/e8rGW1ab";
 
 export default function HomePage() {
   return (
@@ -17,7 +17,7 @@ export default function HomePage() {
             From finding your biggest automation wins to shipping custom agents — we&apos;re the partner you call when you&apos;re ready to stop doing things manually.
           </p>
           <div className="hero-cta">
-            <Link href={BOOK_URL} className="btn-primary">Book an Assessment — $497</Link>
+            <a href={BOOK_URL} className="btn-primary">Book a Call — $497</a>
             <Link href="#services" className="btn-ghost">See all services</Link>
           </div>
           <div className="hero-trust">
@@ -42,7 +42,7 @@ export default function HomePage() {
               <p className="service-body-v2">
                 The fastest way to find your biggest automation wins. A structured discovery call, a custom 48-hour report mapping your opportunities by effort and impact, and a walkthrough call so you know exactly where to start.
               </p>
-              <Link href={BOOK_URL} className="service-link">Book your assessment →</Link>
+              <a href={BOOK_URL} className="service-link">Book a call →</a>
             </div>
 
             <div className="service-card-v2">
@@ -196,7 +196,7 @@ export default function HomePage() {
               The AI Business Assessment is the fastest way to get a specific, actionable plan. A discovery call, a custom report in 48 hours, and a walkthrough so you know exactly what to do next.
             </p>
             <div className="cta-close-row">
-              <Link href={BOOK_URL} className="btn-primary">Book your Assessment</Link>
+              <a href={BOOK_URL} className="btn-primary">Book a Call</a>
               <a href="mailto:hello@leverageaipartner.com" className="btn-ghost">Or email us directly</a>
               <span className="cta-price">
                 <strong>$497</strong> · delivered in 48 hours
