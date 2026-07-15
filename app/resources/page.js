@@ -4,7 +4,7 @@ import FaqAccordion from "../components/FaqAccordion";
 export const metadata = {
   title: "Resources · Leverage AI Partner",
   description:
-    "Free resources to help your team move faster with AI — a prompt library, the Lex quick-win chat, and answers to the most common AI consulting questions.",
+    "Free resources to help your team move faster with AI — a copy-ready prompt library and answers to the most common questions about the AI Tools Assessment.",
 };
 
 export default function ResourcesPage() {
@@ -20,14 +20,6 @@ export default function ResourcesPage() {
 
       <section className="section resources-cards-section container" style={{ borderTop: "1px solid var(--color-border)" }}>
         <div className="resources-cards">
-          <Link href="/chat" className="resource-card">
-            <div className="resource-card-icon"><LexIcon /></div>
-            <div className="resource-card-title">Chat with Lex</div>
-            <p className="resource-card-body">
-              4 quick questions. A personalized AI action plan. Lex identifies your highest-leverage quick win in about 2 minutes — with a specific first step you can take today.
-            </p>
-            <span className="resource-card-link">Start the chat →</span>
-          </Link>
           <Link href="/prompts" className="resource-card">
             <div className="resource-card-icon"><PromptsIcon /></div>
             <div className="resource-card-title">Prompt Library</div>
@@ -35,6 +27,14 @@ export default function ResourcesPage() {
               Copy-ready AI prompts for operations, admin, and IT workflows. Built for business teams, not developers — click to copy, paste into any AI tool.
             </p>
             <span className="resource-card-link">Browse prompts →</span>
+          </Link>
+          <Link href="/assessment" className="resource-card">
+            <div className="resource-card-icon"><AssessmentIcon /></div>
+            <div className="resource-card-title">The AI Tools Assessment</div>
+            <p className="resource-card-body">
+              What&apos;s included, how it works, and the guarantee — a one-page overview of the assessment: 3–7 tool prescriptions that reclaim 5+ hours of your week, or it&apos;s free.
+            </p>
+            <span className="resource-card-link">See the details →</span>
           </Link>
         </div>
       </section>
@@ -50,12 +50,12 @@ export default function ResourcesPage() {
       <section className="section container" style={{ borderTop: "1px solid var(--color-border)" }}>
         <div className="cta-close">
           <div className="eyebrow eyebrow-green">Ready to go deeper?</div>
-          <h2 className="cta-close-heading">Get a plan built for your business.</h2>
+          <h2 className="cta-close-heading">Get a prescription built for your business.</h2>
           <p className="cta-close-body">
-            These resources are a starting point. The AI Business Audit gives you a custom roadmap built around how your team specifically operates — not a generic checklist.
+            These resources are a starting point. The AI Tools Assessment prescribes the exact 3–7 tools that fit how your business actually runs — and if we can&apos;t find you 5 reclaimable hours a week, it&apos;s free.
           </p>
           <div className="cta-close-row">
-            <Link href="/book" className="btn-primary">Book an AI Audit — $497</Link>
+            <Link href="/book" className="btn-primary">Book the Assessment — $999</Link>
             <a href="mailto:hello@leverageaipartner.com" className="btn-ghost">Email us</a>
           </div>
         </div>
@@ -64,11 +64,11 @@ export default function ResourcesPage() {
   );
 }
 
-function LexIcon() {
+function AssessmentIcon() {
   return (
     <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
       <path d="M11 3C6.58 3 3 6.58 3 11s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8z" stroke="currentColor" strokeWidth="1.5" />
-      <path d="M8 11h6M11 8v6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+      <path d="M7.5 11l2.5 2.5 4.5-5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
 }

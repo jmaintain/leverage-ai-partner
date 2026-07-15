@@ -9,16 +9,16 @@ export default function HomePage() {
       {/* 1. HERO */}
       <section className="hero">
         <div className="container hero-stagger">
-          <div className="eyebrow eyebrow-green">AI Consulting · Training · Development</div>
+          <div className="eyebrow eyebrow-green">The AI Tools Assessment</div>
           <h1 className="hero-headline">
-            We build AI into the way your business actually works.
+            You don&apos;t need more AI. You need the right three tools.
           </h1>
           <p className="hero-subhead">
-            From finding your biggest automation wins to training your team and shipping custom agents — we&apos;re the partner you call when you&apos;re ready to leverage AI.
+            One 45-minute conversation about how your business actually runs. Within 48 hours, a report prescribing the 3–7 tools that reclaim 5+ hours of your week — and a 4-day plan to make them stick.
           </p>
           <div className="hero-cta">
-            <Link href={BOOK_URL} className="btn-primary">Start with an AI Audit — $497</Link>
-            <Link href="#services" className="btn-ghost">See all services</Link>
+            <Link href={BOOK_URL} className="btn-primary">Book the Assessment — $999</Link>
+            <Link href="#how" className="btn-ghost">How it works</Link>
           </div>
           <div className="hero-trust">
             <span className="hero-dot" />
@@ -27,59 +27,14 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 2. SERVICES */}
-      <Reveal as="section" id="services" className="section" style={{ borderTop: "1px solid var(--color-border)" }}>
+      {/* 2. GUARANTEE STRIP */}
+      <Reveal as="section" className="guarantee-strip-section" style={{ borderTop: "1px solid var(--color-border)" }}>
         <div className="container">
-          <div className="eyebrow eyebrow-green">What we do</div>
-          <h2 className="section-heading">Four ways we help you win with AI.</h2>
-          <div className="services-grid-4">
-            <div className="service-card-v2">
-              <div className="service-card-header">
-                <span className="service-card-num">01</span>
-                <span className="service-card-tag service-tag-green">From $497</span>
-              </div>
-              <div className="service-title-v2">AI Business Audit</div>
-              <p className="service-body-v2">
-                The fastest way to find your biggest automation wins. A 45-minute discovery call, a custom 48-hour report mapping your opportunities by effort and impact, and a walkthrough call to make sure you know exactly what to do first.
-              </p>
-              <Link href={BOOK_URL} className="service-link">Book your audit →</Link>
-            </div>
-
-            <div className="service-card-v2">
-              <div className="service-card-header">
-                <span className="service-card-num">02</span>
-                <span className="service-card-tag">Custom pricing</span>
-              </div>
-              <div className="service-title-v2">AI Training &amp; Workshops</div>
-              <p className="service-body-v2">
-                Hands-on sessions that teach your team to use AI tools in their actual daily work — not a generic overview. We build the curriculum around the tools you already pay for and the workflows your team runs every day.
-              </p>
-              <a href="mailto:hello@leverageaipartner.com" className="service-link">Get in touch →</a>
-            </div>
-
-            <div className="service-card-v2">
-              <div className="service-card-header">
-                <span className="service-card-num">03</span>
-                <span className="service-card-tag">Flat-fee projects</span>
-              </div>
-              <div className="service-title-v2">Custom AI Development</div>
-              <p className="service-body-v2">
-                Purpose-built agents, automations, and GPTs designed around your specific workflows — not generic chatbots. Scoped engagements with clear deliverables, shipped in focused sprints so you see results fast.
-              </p>
-              <a href="mailto:hello@leverageaipartner.com" className="service-link">Start a project →</a>
-            </div>
-
-            <div className="service-card-v2">
-              <div className="service-card-header">
-                <span className="service-card-num">04</span>
-                <span className="service-card-tag">Monthly retainer</span>
-              </div>
-              <div className="service-title-v2">Ongoing Support</div>
-              <p className="service-body-v2">
-                A retainer partner who keeps your AI systems tuned, updated, and scaling as your business grows. New integrations, team onboarding, performance reviews, and rapid-response help when something needs adjusting.
-              </p>
-              <a href="mailto:hello@leverageaipartner.com" className="service-link">Learn more →</a>
-            </div>
+          <div className="guarantee-strip">
+            <div className="guarantee-badge">The Guarantee</div>
+            <p className="guarantee-text">
+              If your assessment identifies fewer than <strong>5 reclaimable hours per week</strong>, you get a full refund. We can make that promise because we haven&apos;t missed yet — in any business with real payroll, the hours are there.
+            </p>
           </div>
         </div>
       </Reveal>
@@ -87,28 +42,28 @@ export default function HomePage() {
       {/* 3. HOW IT WORKS */}
       <Reveal as="section" id="how" className="section" style={{ borderTop: "1px solid var(--color-border)" }}>
         <div className="container">
-          <div className="eyebrow eyebrow-green">How the audit works</div>
-          <h2 className="section-heading">Three steps. No jargon.</h2>
+          <div className="eyebrow eyebrow-green">How it works</div>
+          <h2 className="section-heading">Three steps. One week. No jargon.</h2>
           <div className="steps">
             <div className="step">
               <div className="step-number">01</div>
               <div className="step-title">Discover</div>
               <p className="step-body">
-                45-minute Zoom call. We learn how your business actually runs — where time leaks, what tools you already pay for, and what&apos;s eating your week.
+                A 45-minute recorded interview about how your business actually runs — where time leaks, what software you pay for but barely open, and what only you can do that really shouldn&apos;t require you.
               </p>
             </div>
             <div className="step">
               <div className="step-number">02</div>
-              <div className="step-title">Analyze</div>
+              <div className="step-title">Prescribe</div>
               <p className="step-body">
-                Within 48 hours you get a custom report mapping exactly where AI can give you hours and dollars back — ranked by effort vs. impact.
+                Within 48 hours you get the report: 3–7 specific tools — one per problem, not a comparison chart — with real pricing, setup effort, hours reclaimed, and a 4-day quick-start plan.
               </p>
             </div>
             <div className="step">
               <div className="step-number">03</div>
-              <div className="step-title">Act</div>
+              <div className="step-title">Review</div>
               <p className="step-body">
-                Follow-up call to walk through the findings. You leave with a clear quick-win plan — run it yourself, or we build it for you.
+                A recorded walkthrough call — you keep the recording and transcript as team training material. Leave with total clarity: run the plan yourself, or have us implement it with your $999 credited in full.
               </p>
             </div>
           </div>
@@ -119,45 +74,52 @@ export default function HomePage() {
       <Reveal as="section" className="section" style={{ borderTop: "1px solid var(--color-border)" }}>
         <div className="container">
           <div className="eyebrow">What&apos;s in the report</div>
-          <h2 className="section-heading">Specific opportunities. Ranked. With a plan.</h2>
+          <h2 className="section-heading">A prescription, not a survey.</h2>
           <div className="report">
             <ul className="report-list">
               <li className="report-item">
                 <span className="report-check"><Check /></span>
                 <div>
                   <div className="report-item-title">Executive summary</div>
-                  <div className="report-item-body">One page, no jargon. What we found, what it&apos;s worth, what to do first.</div>
+                  <div className="report-item-body">Half a page, no jargon. What we heard, what we found, what it&apos;s worth, and where to start.</div>
                 </div>
               </li>
               <li className="report-item">
                 <span className="report-check"><Check /></span>
                 <div>
                   <div className="report-item-title">Effort vs. impact matrix</div>
-                  <div className="report-item-body">Every opportunity plotted. Quick wins vs. long plays, at a glance.</div>
+                  <div className="report-item-body">Every recommendation plotted — quick wins, big bets, and what to skip. Yes, we tell you what to skip.</div>
                 </div>
               </li>
               <li className="report-item">
                 <span className="report-check"><Check /></span>
                 <div>
-                  <div className="report-item-title">Recommended tools</div>
-                  <div className="report-item-body">Specific products, pricing, and why they fit your stack — usually Microsoft 365 or Google Workspace.</div>
+                  <div className="report-item-title">3–7 tool prescriptions</div>
+                  <div className="report-item-body">One specific tool per problem, with current pricing and setup effort — including the software you already pay for but underuse.</div>
                 </div>
               </li>
               <li className="report-item">
                 <span className="report-check"><Check /></span>
                 <div>
-                  <div className="report-item-title">Quick-win action plan</div>
-                  <div className="report-item-body">Step-by-step tasks to capture your first wave of time savings — executable immediately.</div>
+                  <div className="report-item-title">4-day quick-start plan</div>
+                  <div className="report-item-body">Day-by-day instructions to have your first tools running within the week — no waiting on us.</div>
+                </div>
+              </li>
+              <li className="report-item">
+                <span className="report-check"><Check /></span>
+                <div>
+                  <div className="report-item-title">The math</div>
+                  <div className="report-item-body">Hours reclaimed × what your hour is worth, against what the tools cost. The arithmetic is shown, not asserted.</div>
                 </div>
               </li>
             </ul>
 
             <div className="mockup">
               <div className="mockup-top">
-                <span className="mockup-label">AI Audit Report · Sample</span>
+                <span className="mockup-label">AI Tools Assessment · Sample</span>
                 <span className="mockup-pill">48 HR</span>
               </div>
-              <div className="mockup-title">Top opportunities identified</div>
+              <div className="mockup-title">Top prescriptions</div>
               <div className="mockup-sub">Ranked by estimated weekly time reclaimed.</div>
 
               <div className="mockup-findings">
@@ -171,7 +133,7 @@ export default function HomePage() {
                 <div className="mockup-finding">
                   <span className="mockup-finding-num">02</span>
                   <div className="mockup-finding-content">
-                    <div className="mockup-finding-name">Proposal &amp; document drafting</div>
+                    <div className="mockup-finding-name">Meeting notes → action items</div>
                     <div className="mockup-finding-save">~2.5 hrs / week</div>
                   </div>
                 </div>
@@ -185,58 +147,140 @@ export default function HomePage() {
               </div>
 
               <div className="mockup-quickwin">
-                <div className="mockup-quickwin-label">Week 1 quick win</div>
-                <div className="mockup-quickwin-value">Start with email triage — highest ROI, lowest setup effort.</div>
+                <div className="mockup-quickwin-label">Day 1 of your quick-start</div>
+                <div className="mockup-quickwin-value">Set up email triage first — highest return, lowest setup effort.</div>
               </div>
             </div>
           </div>
         </div>
       </Reveal>
 
-      {/* 5. WHO IT'S FOR */}
+      {/* 5. WHAT'S INCLUDED */}
       <Reveal as="section" className="section" style={{ borderTop: "1px solid var(--color-border)" }}>
         <div className="container">
-          <div className="eyebrow">Who we work with</div>
-          <h2 className="section-heading">Best fit: businesses wearing too many hats.</h2>
-          <div className="fit-grid">
-            <ul className="fit-list">
-              <li className="fit-item">
-                <span className="fit-bullet"><Check /></span>
-                <span>You have a small-to-mid-sized team and you&apos;re paying for time you don&apos;t have.</span>
-              </li>
-              <li className="fit-item">
-                <span className="fit-bullet"><Check /></span>
-                <span>You&apos;re curious about AI but don&apos;t have time to research it yourself.</span>
-              </li>
-              <li className="fit-item">
-                <span className="fit-bullet"><Check /></span>
-                <span>You want a specific plan — not another generic AI webinar.</span>
-              </li>
-              <li className="fit-item">
-                <span className="fit-bullet"><Check /></span>
-                <span>Your team needs real training — not vendor marketing dressed up as education.</span>
-              </li>
-            </ul>
-
-            <div>
-              <p className="body-text">
-                If your team runs repeatable processes and you&apos;re spending time on things that shouldn&apos;t require your attention, there&apos;s almost always leverage hiding in how you work — and we know how to find it.
+          <div className="eyebrow eyebrow-green">Included with every assessment</div>
+          <h2 className="section-heading" style={{ fontSize: "clamp(22px, 2.6vw, 32px)" }}>
+            The report is the start, not the whole deliverable.
+          </h2>
+          <div className="support-grid">
+            <div className="support-card">
+              <div className="support-card-icon"><PromptIcon /></div>
+              <div className="support-card-title">Custom Prompt Pack</div>
+              <p className="support-card-body">
+                3–5 ready-to-use prompts built specifically for your business and the pain points you named — not generic templates. Delivered with the report.
               </p>
-              <p className="body-text" style={{ marginTop: 16 }}>
-                We work with businesses across a range of industries. What matters more than the sector is how your team operates day-to-day and where your time is going.
+            </div>
+            <div className="support-card">
+              <div className="support-card-icon"><RecordingIcon /></div>
+              <div className="support-card-title">Recording &amp; Transcript</div>
+              <p className="support-card-body">
+                The full review call is recorded and yours to keep — most clients share it with their team as training material for the rollout.
+              </p>
+            </div>
+            <div className="support-card">
+              <div className="support-card-icon"><SupportIcon /></div>
+              <div className="support-card-title">90 Days of Office Hours</div>
+              <p className="support-card-body">
+                One emailed question per month for 90 days after delivery. Hit a snag during rollout? You&apos;re not on your own.
               </p>
             </div>
           </div>
         </div>
       </Reveal>
 
-      {/* 6. TOOLS WE TEACH */}
+      {/* 6. WHO IT'S FOR */}
       <Reveal as="section" className="section" style={{ borderTop: "1px solid var(--color-border)" }}>
         <div className="container">
-          <div className="eyebrow eyebrow-green">Tools we teach &amp; implement</div>
+          <div className="eyebrow">Who it&apos;s for</div>
+          <h2 className="section-heading">Built for owners still in the weeds.</h2>
+          <div className="fit-grid">
+            <ul className="fit-list">
+              <li className="fit-item">
+                <span className="fit-bullet"><Check /></span>
+                <span>You run an owner-operated business — roughly $500K–$5M in revenue, 3–25 employees.</span>
+              </li>
+              <li className="fit-item">
+                <span className="fit-bullet"><Check /></span>
+                <span>You&apos;re still doing day-to-day operations yourself, and your week disappears into tasks that shouldn&apos;t need you.</span>
+              </li>
+              <li className="fit-item">
+                <span className="fit-bullet"><Check /></span>
+                <span>You&apos;re paying for software — maybe even AI subscriptions — that nobody on the team actually opens.</span>
+              </li>
+              <li className="fit-item">
+                <span className="fit-bullet"><Check /></span>
+                <span>You want a specific prescription, not another webinar or a &quot;Top 10 AI Tools&quot; listicle.</span>
+              </li>
+            </ul>
+
+            <div>
+              <p className="body-text">
+                The assessment works because businesses this size have real, findable hours hiding in email, admin, scheduling, and follow-up — and an owner with the authority to act on the plan the same week.
+              </p>
+              <p className="body-text" style={{ marginTop: 16 }}>
+                An honest note: if you&apos;re a solopreneur or an enterprise, this probably isn&apos;t the right fit — and we&apos;ll tell you that up front rather than take the fee. The guarantee only means something if we qualify who we work with.
+              </p>
+            </div>
+          </div>
+        </div>
+      </Reveal>
+
+      {/* 7. AFTER THE ASSESSMENT */}
+      <Reveal as="section" id="after" className="section" style={{ borderTop: "1px solid var(--color-border)" }}>
+        <div className="container">
+          <div className="eyebrow eyebrow-green">After the assessment</div>
+          <h2 className="section-heading">Two ways to run the plan.</h2>
+          <div className="services-grid-4">
+            <div className="service-card-v2">
+              <div className="service-card-header">
+                <span className="service-card-num">A</span>
+                <span className="service-card-tag">Included</span>
+              </div>
+              <div className="service-title-v2">Do it yourself</div>
+              <p className="service-body-v2">
+                The report is built to stand alone. The 4-day quick-start plan gets your first tools running within the week, the prompt pack covers your named pain points, and office hours have your back for 90 days. A real path — no pressure, no drip campaign.
+              </p>
+            </div>
+
+            <div className="service-card-v2">
+              <div className="service-card-header">
+                <span className="service-card-num">B</span>
+                <span className="service-card-tag service-tag-green">$999 credited</span>
+              </div>
+              <div className="service-title-v2">We implement it for you</div>
+              <p className="service-body-v2">
+                We set up, customize, and train your team on everything in your report — from a quick-wins setup to the full roadmap. Your entire $999 assessment fee is credited toward any implementation. Scoped and quoted at your review call.
+              </p>
+              <a href="mailto:hello@leverageaipartner.com" className="service-link">Ask about implementation →</a>
+            </div>
+          </div>
+
+          <div className="concierge-band">
+            <div className="concierge-copy">
+              <div className="eyebrow eyebrow-green">The ongoing option</div>
+              <h3 className="concierge-heading">AI Concierge — your standing AI department, without the hire.</h3>
+              <p className="concierge-body">
+                For businesses that want a partner, not a project. Two working calls a month where we build live, unlimited async access between them, and a quarterly review that cuts the tools you&apos;re paying for but not using.
+              </p>
+            </div>
+            <ul className="concierge-list">
+              <li><span className="fit-bullet"><Check /></span> Two 45-minute working calls per month — we build live</li>
+              <li><span className="fit-bullet"><Check /></span> Unlimited async access, answered within 12 business hours</li>
+              <li><span className="fit-bullet"><Check /></span> Everything we build, you keep — skills, prompts, automations</li>
+              <li><span className="fit-bullet"><Check /></span> Quarterly tool rationalization — we cut what you don&apos;t use</li>
+              <li className="concierge-cap"><span className="fit-bullet"><Check /></span> Capped at 6 clients — two working calls per client is the quality ceiling, so the roster stays small</li>
+            </ul>
+          </div>
+        </div>
+      </Reveal>
+
+      {/* 8. TOOLS */}
+      <Reveal as="section" className="section" style={{ borderTop: "1px solid var(--color-border)" }}>
+        <div className="container">
+          <div className="eyebrow eyebrow-green">Tool-agnostic, on purpose</div>
           <h2 className="section-heading">You don&apos;t need 47 tools. You need the right ones.</h2>
           <p className="body-text" style={{ marginTop: 16, marginBottom: 48, maxWidth: 600 }}>
-            We focus on a curated set of tools that actually deliver for small and mid-sized teams — and we know how to make them work together.
+            We prescribe whatever fits your business — including the software you already pay for. Deep fluency in the Anthropic and OpenAI ecosystems, plus the automation platforms that glue everything together.
           </p>
           <div className="tools-grid">
             <div className="tool-card">
@@ -302,7 +346,7 @@ export default function HomePage() {
         </div>
       </Reveal>
 
-      {/* 7. TEAM */}
+      {/* 9. TEAM */}
       <Reveal as="section" id="team" className="section" style={{ borderTop: "1px solid var(--color-border)" }}>
         <div className="container">
           <div className="eyebrow eyebrow-green">Who we are</div>
@@ -346,80 +390,20 @@ export default function HomePage() {
         </div>
       </Reveal>
 
-      {/* 7. LEARNING & SUPPORT CALLOUT */}
-      <Reveal as="section" className="section" style={{ borderTop: "1px solid var(--color-border)" }}>
-        <div className="container">
-          <div className="eyebrow">Training &amp; support</div>
-          <h2 className="section-heading" style={{ fontSize: "clamp(22px, 2.6vw, 32px)" }}>
-            We don&apos;t just build it and leave. We make sure your team can own it.
-          </h2>
-          <div className="support-grid">
-            <div className="support-card">
-              <div className="support-card-icon"><WorkshopIcon /></div>
-              <div className="support-card-title">Live Virtual Workshops</div>
-              <p className="support-card-body">
-                Focused online sessions where your team learns to use AI tools in context — built around your actual workflows, not generic examples. Run live over Zoom, no travel required.
-              </p>
-            </div>
-            <div className="support-card">
-              <div className="support-card-icon"><LearnIcon /></div>
-              <div className="support-card-title">Guided Learning Tracks</div>
-              <p className="support-card-body">
-                Multi-session virtual programs for teams rolling out new AI tools. We build the curriculum, run the sessions remotely, and make sure adoption actually sticks.
-              </p>
-            </div>
-            <div className="support-card">
-              <div className="support-card-icon"><SupportIcon /></div>
-              <div className="support-card-title">Ongoing Virtual Support</div>
-              <p className="support-card-body">
-                Monthly access to both engineers via call or async — for questions, tune-ups, new integrations, and troubleshooting as your AI and IT environment evolves.
-              </p>
-            </div>
-          </div>
-        </div>
-      </Reveal>
-
-      {/* 8. LEX TEASER */}
-      <Reveal as="section" className="section" style={{ borderTop: "1px solid var(--color-border)" }}>
-        <div className="container">
-          <div className="lex-teaser">
-            <div>
-              <div className="eyebrow">Not ready to book?</div>
-              <h2 className="lex-teaser-heading">Chat with Lex.</h2>
-              <p className="lex-teaser-body">
-                Lex finds your first AI quick win in a 2-minute chat — then puts together a personalized action plan. No pressure, no tech skills required.
-              </p>
-              <Link href="/chat" className="btn-primary" style={{ marginTop: 24, display: "inline-flex" }}>
-                Chat with Lex →
-              </Link>
-            </div>
-            <div className="lex-teaser-preview" aria-hidden="true">
-              <div className="lex-teaser-bubble">Where does your team spend the most time?</div>
-              <div className="lex-teaser-options">
-                <div className="lex-teaser-opt">Email &amp; communication</div>
-                <div className="lex-teaser-opt">Admin &amp; documentation</div>
-                <div className="lex-teaser-opt">IT &amp; systems</div>
-                <div className="lex-teaser-opt">Client work &amp; delivery</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </Reveal>
-
-      {/* 9. CTA FOOTER */}
+      {/* 10. CTA FOOTER */}
       <Reveal as="section" id="book" className="section" style={{ paddingBottom: 0 }}>
         <div className="container">
           <div className="cta-close">
             <div className="eyebrow eyebrow-green">Ready to start?</div>
-            <h2 className="cta-close-heading">Find out where the hours are hiding.</h2>
+            <h2 className="cta-close-heading">Find your five hours.</h2>
             <p className="cta-close-body">
-              The AI Business Audit is the fastest way to get a specific, actionable plan. 45 minutes with us, a custom report in 48 hours, and a walkthrough call to make sure you know exactly what to do next.
+              One 45-minute conversation. A report prescribing the exact tools that fit your business. A 4-day plan to put them to work. And if we can&apos;t find you 5 reclaimable hours a week, you don&apos;t pay.
             </p>
             <div className="cta-close-row">
-              <Link href={BOOK_URL} className="btn-primary">Book your AI Audit</Link>
+              <Link href={BOOK_URL} className="btn-primary">Book the Assessment</Link>
               <a href="mailto:hello@leverageaipartner.com" className="btn-ghost">Or email us directly</a>
               <span className="cta-price">
-                <strong>$497</strong> · delivered in 48 hours
+                <strong>$999</strong> · report in 48 hours · refund-backed
               </span>
             </div>
           </div>
@@ -437,21 +421,20 @@ function Check() {
   );
 }
 
-function WorkshopIcon() {
+function PromptIcon() {
   return (
     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-      <rect x="2" y="3" width="16" height="11" rx="2" stroke="currentColor" strokeWidth="1.5" />
-      <path d="M7 17h6M10 14v3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-      <path d="M6 7.5h8M6 10.5h5" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" />
+      <rect x="2.5" y="2.5" width="15" height="15" rx="2" stroke="currentColor" strokeWidth="1.5" />
+      <path d="M6 7.5l2.5 2.5L6 12.5M10.5 12.5H14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
 }
 
-function LearnIcon() {
+function RecordingIcon() {
   return (
     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-      <path d="M10 3L2 7l8 4 8-4-8-4z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
-      <path d="M2 7v5M6 9v4.5c0 1.38 1.79 2.5 4 2.5s4-1.12 4-2.5V9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+      <rect x="2" y="4" width="12" height="12" rx="2" stroke="currentColor" strokeWidth="1.5" />
+      <path d="M14 8.5l4-2.5v8l-4-2.5" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
     </svg>
   );
 }

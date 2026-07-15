@@ -3,9 +3,9 @@ import Reveal from "../components/Reveal";
 import ZcalEmbed from "../components/ZcalEmbed";
 
 export const metadata = {
-  title: "Book Your AI Assessment · Leverage AI Partner",
+  title: "Book the AI Tools Assessment · Leverage AI Partner",
   description:
-    "Book your 45-minute AI Business Assessment. Walk away with a custom roadmap showing exactly where AI fits in your business.",
+    "Book your 45-minute AI Tools Assessment. Within 48 hours, get a report prescribing the 3–7 tools that reclaim 5+ hours of your week — guaranteed, or it's free.",
 };
 
 export default function BookPage() {
@@ -14,12 +14,12 @@ export default function BookPage() {
 
       {/* HERO */}
       <section className="book-hero container">
-        <div className="eyebrow eyebrow-green">AI Business Assessment</div>
+        <div className="eyebrow eyebrow-green">The AI Tools Assessment</div>
         <h1 className="book-headline">
-          Stop guessing. Start automating the right things.
+          Stop guessing. Start with the right three tools.
         </h1>
         <p className="book-subhead">
-          One 45-minute call. A custom report in 48 hours. A clear, prioritized plan built around your actual business — not a generic AI checklist.
+          One 45-minute call. Within 48 hours, a report prescribing the 3–7 tools that reclaim 5+ hours of your week — with a 4-day plan to make them stick. If we can’t find 5 reclaimable hours, it’s free.
         </p>
       </section>
 
@@ -49,10 +49,10 @@ export default function BookPage() {
         <div className="book-opportunity-card">
           <div className="eyebrow eyebrow-green">The Opportunity</div>
           <h2 className="book-section-heading" style={{ maxWidth: 680 }}>
-            What if you had a clear, prioritized roadmap — built for your business, not the next guy's?
+            What if you had a prescription — the exact tools for your business, not the next guy’s?
           </h2>
           <p className="book-prose-single">
-            Not another generic "Top 10 AI Tools" listicle. A custom implementation plan that identifies exactly which workflows to automate first, which tools to use, and how to do it without disrupting how your team already works. Something you can start executing this week.
+            Not another generic “Top 10 AI Tools” listicle. A report prescribing 3–7 specific tools — one per problem, with real pricing and setup effort — plus a 4-day quick-start plan. And it’s backed by a guarantee: if the assessment identifies fewer than 5 reclaimable hours per week, you get a full refund.
           </p>
           <div className="book-stat-row">
             <div className="book-stat">
@@ -64,8 +64,8 @@ export default function BookPage() {
               <div className="book-stat-label">Custom report delivered</div>
             </div>
             <div className="book-stat">
-              <div className="book-stat-num">$497</div>
-              <div className="book-stat-label">Flat fee, no retainer</div>
+              <div className="book-stat-num">$999</div>
+              <div className="book-stat-label">Flat fee · refund-backed</div>
             </div>
           </div>
         </div>
@@ -100,18 +100,27 @@ export default function BookPage() {
           <div className="book-deliverable">
             <div className="book-deliverable-num">02</div>
             <div>
-              <div className="book-deliverable-title">Custom AI Roadmap Report</div>
+              <div className="book-deliverable-title">The Assessment Report</div>
               <p className="book-deliverable-body">
-                Delivered within 48 hours. A prioritized, step-by-step implementation plan specific to your workflows — including which tools to use, what to automate first, and realistic time savings you can expect.
+                Delivered within 48 hours. 3–7 tool prescriptions with real pricing and setup effort, an effort-vs-impact matrix, the ROI math shown in full, and a 4-day quick-start plan.
               </p>
             </div>
           </div>
           <div className="book-deliverable">
             <div className="book-deliverable-num">03</div>
             <div>
-              <div className="book-deliverable-title">30-Min Walkthrough Call</div>
+              <div className="book-deliverable-title">Review Call — Recorded, Yours to Keep</div>
               <p className="book-deliverable-body">
-                We walk through your report together, answer questions, and make sure you know exactly how to execute — whether you work with us going forward or run it yourself.
+                We walk through your report together and make sure you know exactly how to execute. The recording and transcript are yours — most clients share them with their team as training material.
+              </p>
+            </div>
+          </div>
+          <div className="book-deliverable">
+            <div className="book-deliverable-num">04</div>
+            <div>
+              <div className="book-deliverable-title">Prompt Pack + 90 Days of Office Hours</div>
+              <p className="book-deliverable-body">
+                A custom prompt pack built for your named pain points, delivered with the report. Then one emailed question per month for 90 days — you’re not on your own during rollout.
               </p>
             </div>
           </div>
@@ -147,7 +156,7 @@ export default function BookPage() {
           <div className="book-step">
             <div className="book-step-dot" />
             <div>
-              <div className="book-step-title">We walk through it together (30 min)</div>
+              <div className="book-step-title">We walk through it together (review call)</div>
               <p className="book-step-body">We review the plan, answer your questions, and make sure you leave with complete clarity on what to do next.</p>
             </div>
           </div>

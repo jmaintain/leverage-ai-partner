@@ -3,36 +3,36 @@ import { useState } from "react";
 
 const FAQS = [
   {
-    q: "What is an AI Business Audit?",
-    a: "The AI Business Audit is a focused engagement where we learn how your business runs, identify your highest-leverage automation opportunities, and deliver a custom report within 48 hours. It includes a 45-minute discovery call, the written report, and a 30-minute walkthrough call — all for a flat $497.",
+    q: "What is the AI Tools Assessment?",
+    a: "A 45-minute structured interview about how your business actually runs. Within 48 hours you receive a report prescribing 3–7 specific tools that reclaim at least 5 hours of your week, with a 4-day quick-start plan. It includes a recorded review call (you keep the recording and transcript), a custom prompt pack built for your business, and 90 days of email office hours — all for a flat $999.",
+  },
+  {
+    q: "What's the guarantee?",
+    a: "If your assessment identifies fewer than 5 reclaimable hours per week, you get a full refund. We can offer that because in any owner-operated business with real payroll, the hours are there — hiding in email, admin, scheduling, and follow-up.",
+  },
+  {
+    q: "Who is this for?",
+    a: "Owner-operated businesses, roughly $500K–$5M in revenue with 3–25 employees, where the owner is still in the weeds of day-to-day operations. If you're a solopreneur or an enterprise, we'll tell you honestly that this isn't the right fit and point you in a better direction — the guarantee only works because we qualify who we work with.",
   },
   {
     q: "Do I need to be technical to benefit?",
-    a: "Not at all. Most of our clients are operators, owners, and managers — not technical staff. We translate everything into plain language and practical next steps you can act on immediately, with or without a technical background.",
+    a: "Not at all. Most of our clients are operators, owners, and managers — not technical staff. Every recommendation is in plain language with a concrete first step, and the 4-day quick-start plan assumes zero technical background.",
   },
   {
-    q: "What AI tools do you work with?",
-    a: "We work across a broad range — from ChatGPT and Claude to workflow automation platforms like Make, Zapier, and n8n, to enterprise tools within Microsoft 365 and Google Workspace. We recommend based on what already exists in your environment, not what we prefer to sell.",
+    q: "What tools do you recommend?",
+    a: "We're tool-agnostic at the assessment — we prescribe whatever fits, from ChatGPT and Claude to automation platforms like Make and Zapier to vertical software for your industry. We especially look for tools you already pay for but underuse; those recommendations cost you nothing new and are often the fastest wins.",
   },
   {
-    q: "How long does the whole process take?",
-    a: "The audit is complete within a week: a 45-minute discovery call, a 48-hour report turnaround, and a 30-minute walkthrough. Implementation timelines depend on scope — quick wins can often be running within days of the audit.",
-  },
-  {
-    q: "What happens after the audit?",
-    a: "You walk away with a prioritized roadmap you can act on independently. Many clients choose to continue working with us to implement what the report surfaces — through a custom build engagement or an ongoing retainer — but there's no obligation.",
-  },
-  {
-    q: "Can you build custom AI solutions for us?",
-    a: "Yes. Custom AI development is one of our core services — agents, automations, GPTs, and workflow integrations built around your specific processes. These are scoped as flat-fee projects with clear deliverables.",
+    q: "What happens after the assessment?",
+    a: "Two ways to run the plan. Do it yourself — the report, quick-start plan, prompt pack, and office hours are built to stand alone. Or have us implement it for you: we set up, customize, and train your team on everything in the report, and your full $999 assessment fee is credited toward the implementation.",
   },
   {
     q: "Do you offer ongoing support?",
-    a: "We do. Our retainer support gives you monthly access to both engineers via call or async — for tune-ups, new integrations, team questions, and rapid-response help as your AI and technology environment evolves.",
+    a: "Yes — the AI Concierge, our ongoing partnership. Two 45-minute working calls a month where we build live, unlimited async access between calls, and a quarterly review that cuts the tools you're paying for but not using. Everything we build is yours to keep. The roster is capped at 6 clients so quality stays high.",
   },
   {
     q: "How is this different from hiring someone full-time?",
-    a: "A full-time AI hire takes months to find and onboard, and costs six figures annually before you know whether they'll deliver. With us, you get two engineers with deep IT and AI backgrounds for a fraction of that cost — and you can start with a single $497 audit to see exactly what's possible before committing to anything.",
+    a: "A full-time AI hire takes months to find and costs six figures annually before you know whether they'll deliver. The assessment gets you a specific, prioritized plan for $999 in under a week — and if you want hands-on help after that, implementation and the Concierge give you two engineers with deep IT backgrounds for a fraction of a single salary.",
   },
 ];
 

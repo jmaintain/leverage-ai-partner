@@ -25,12 +25,12 @@ export default function PromptsPage() {
       <section className="section container" style={{ borderTop: "1px solid var(--color-border)" }}>
         <div className="cta-close">
           <div className="eyebrow eyebrow-green">Want more than prompts?</div>
-          <h2 className="cta-close-heading">Get a plan built for your business.</h2>
+          <h2 className="cta-close-heading">Get a prompt pack built for your business.</h2>
           <p className="cta-close-body">
-            Prompts are a starting point. The AI Business Audit shows you exactly which workflows to automate, which tools to use, and what to do first — built around how your team actually operates.
+            These are generic on purpose — the AI Tools Assessment includes a custom prompt pack built around your actual pain points, plus the 3–7 tool prescriptions that reclaim 5+ hours of your week. Guaranteed, or it&apos;s free.
           </p>
           <div className="cta-close-row">
-            <Link href="/book" className="btn-primary">Book an AI Audit — $497</Link>
+            <Link href="/book" className="btn-primary">Book the Assessment — $999</Link>
             <Link href="/resources" className="btn-ghost">Back to resources</Link>
           </div>
         </div>
